@@ -7,4 +7,5 @@ TODO:
  * `pcurl-win` highlighting
  * json highlighting somehow breaks when editing the curl command
  * allow reloading in pcurl-win
+ * get everything working with tabs
 

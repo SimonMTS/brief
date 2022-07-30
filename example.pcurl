@@ -3,7 +3,7 @@ curl
 --include       # Show response headers
 #--silent       # no progress bar (is auto inserted)
 --request GET
---url 'https://freerp.nl'
+--url 'freerp.nl'
 
 --header 'X-Bsn: 111222333'
 
