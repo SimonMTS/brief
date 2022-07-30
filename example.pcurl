@@ -3,7 +3,7 @@ curl
 --include       # Show response headers
 #--silent       # no progress bar (is auto inserted)
 --request GET
---url 'freerp.nl'
+--url 'http://httpstat.us/200'
 
 --header 'X-Bsn: 111222333'
 
@@ -14,5 +14,5 @@ curl
     "asd": 123,
     "qwe": "fgh",
     "foo": [ "a", "b" ]
-}'
+}' | jq -Rr '. as $line | try fromjson catch $line'
 

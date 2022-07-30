@@ -49,7 +49,7 @@ func main() {
             commandString += "\n"
         }
     }
-    commandString += " --silent"
+    commandString = strings.Replace(commandString, "curl", "curl --silent", 1)
 
     cmd := exec.Command("sh", "-c", commandString)
     out, err := cmd.CombinedOutput()
