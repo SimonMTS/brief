@@ -1,0 +1,18 @@
+curl
+--location      # Follow redirects
+--include       # Show response headers
+#--silent       # no progress bar (is auto inserted)
+--request GET
+--url 'https://freerp.nl'
+
+--header 'X-Bsn: 111222333'
+
+# Wat lange tekst om uit te leggen wat er
+# allemaal in deze json data staat of moet
+# staan.
+--json '{
+    "asd": 123,
+    "qwe": "fgh",
+    "foo": [ "a", "b" ]
+}'
+
