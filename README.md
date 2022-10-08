@@ -8,4 +8,4 @@ TODO:
  * allow reloading in pcurl-win
  * get everything working with tabs
  * rewrite the Go part in lua
-
+   * or maybe use [go-client](https://github.com/neovim/go-client) to write most of the plugin in Go
