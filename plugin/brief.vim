@@ -3,6 +3,6 @@ if exists("g:loaded_brief")
 endif
 let g:loaded_brief = 1
 
-command! -nargs=0 Pcurl lua require("pcurl").main()
-autocmd FileType pcurl setlocal commentstring=#\ %s
+command! -nargs=0 Brief lua require("brief").main()
+autocmd FileType brief setlocal commentstring=#\ %s
 
